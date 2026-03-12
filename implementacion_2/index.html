@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM con Javascript</title>
+</head>
+<body id="body">
+    <input type="text" id="text" onkeydown="mostrarTexto(event)" value="" >
+    <button id="btn">Cambio de Color</button>
+<script>
+//Implementacion de método addEventListener
+const btn = document.getElementById("btn").addEventListener("click", (event) => {
+const fondo = textBox.style.backgroundColor;
+const texto = textBox.style.color;
+//variar el color de fondo
+textBox.style.backgroundColor = (fondo === "white") ? "black" : (fondo === "skyblue") ? "white" : (fondo === "black") ? "skyblue" : "white"
+//variar el color de texto
+textBox.style.color = (texto === "black") ? "white" : (texto === "skyblue") ? "red" : (texto === "white") ? "red" : "black"
+
+}
+);
+//Aplicación tradicional con atributo onkeydown en el input
+const textBox = document.getElementById("text")
+function mostrarTexto(event) {
+    if(event.key == 'Enter'){
+        alert(textBox.value)
+        console.log(textBox)
+    }
+}
+</script>
+</body>
+</html>
