@@ -1,7 +1,7 @@
 import {createServer} from 'node:http'
 import { readFile } from 'node:fs/promises';
 
-const PORT = 8080;
+const PORT = 3000;
 const server = createServer(async(req, res)=>{
 try {
     const file = await readFile('./index.html');
@@ -13,6 +13,6 @@ try {
     res.end("No se ha encontrado la pagina, lo sentimos")
     }
 });
-server.listen(PORT, ()=>{
+server.listen(PORT, HOST, ()=>{
     console.log(`>>> seridor corriendo en http://localhost:${PORT}`)
 })

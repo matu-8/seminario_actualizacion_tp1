@@ -18,6 +18,6 @@ def application(environ, start_response):
         start_response(status, headers)
         return[b"Archivo no encontrado"]
 
-server = make_server('localhost', 8000, application)
-print('>>> Servidor corriendo en http://localhost:8000')
+server = make_server('localhost', 5000, application)
+print('>>> Servidor corriendo en http://localhost:5000')
 server.serve_forever()
