@@ -19,7 +19,7 @@ python server.py
 ```
 5-Aparecerá un mensaje de inicio de servidor, debe presionar tecla control (Ctrl) + click para acceder a la dirección del proyecto.
 ```bash
-//>>> seridor corriendo en http://localhost:8080 (En servidor Javascript)
-//>>> Servidor corriendo en http://localhost:8000 (En servidor python)
+//>>> seridor corriendo en http://localhost:3000 (En servidor Javascript)
+//>>> Servidor corriendo en http://localhost:5000 (En servidor python)
 ```
 6-En implementacion_1, basta con hacer doble click en el archivo html para acceder mediante un navegador y comprobarlo.
