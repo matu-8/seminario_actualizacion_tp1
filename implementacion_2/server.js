@@ -13,6 +13,6 @@ try {
     res.end("No se ha encontrado la pagina, lo sentimos")
     }
 });
-server.listen(PORT, HOST, ()=>{
+server.listen(PORT, ()=>{
     console.log(`>>> seridor corriendo en http://localhost:${PORT}`)
 })
